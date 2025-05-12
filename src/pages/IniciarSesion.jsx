@@ -77,7 +77,7 @@ function IniciarSesion() {
           width:300,
         }}
       >
-        <Typography variant="h5" sx={{ mb: 3, fontWeight: "bold" }}>
+        <Typography variant="h5" sx={{ mb: 3, fontWeight: "bold", color: "#000" }}>
           Iniciar Sesión
         </Typography>
 
@@ -128,19 +128,19 @@ function IniciarSesion() {
           }}
         >
           {loading ?(
-  <CircularProgress size={24} sx={{ color: '#000' }} />
+  <CircularProgress size={24} sx={{ color: '#FFF' }} />
 ) : (
   'Iniciar sesión'
 )}
         </Button>
 
-        <Typography variant="body2" sx={{ mt: 2, color: "gray" }}>
+        <Typography variant="body2" sx={{ mt: 2, color: "black" }}>
           ¿Aún no tienes cuenta?{" "}
           <Button
             variant="text"
             size="small"
-            sx={{ textTransform: "none", padding: 0, minWidth: 0 }}
-            onClick={irARegistro} // Cambié la lógica aquí para usar navigate
+            sx={{ textTransform: "none", padding: 0, minWidth: 0,color: "blue" }}
+            onClick={irARegistro} 
           >
             Regístrate
           </Button>

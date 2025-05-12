@@ -182,7 +182,7 @@ function Registro() {
           <Button
             variant="text"
             size="small"
-            sx={{ textTransform: "none", padding: 0, minWidth: 0 }}
+            sx={{ textTransform: "none", padding: 0, minWidth: 0, color: "blue" }}
             onClick={irAInicio} // Cambié la lógica aquí para usar navigate
           >
             Iniciar Sesion

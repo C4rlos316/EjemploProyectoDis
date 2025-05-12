@@ -15,7 +15,7 @@ export const theme = createTheme({
       paper: '#424242', // Gris medio: fondo para Card, Modal, Dialog
     },
     text: {
-      primary: '#E0E0E0', // Blanco suave: para títulos (Typography) y texto principal
+      primary: '#000000', // Blanco suave: para títulos (Typography) y texto principal
       secondary: '#B0B0B0', // Gris claro: para subtítulos o texto secundario (ej. géneros en GameCard)
       disabled: '#757575', // Gris apagado: para texto o botones deshabilitados
     },
@@ -33,11 +33,12 @@ export const theme = createTheme({
     },
   },
   components: {
+
     // Personalización de estilos por componente de Material UI
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#00B8D4', // Asegura que el AppBar (toolbar) use el color primario (azul neón)
+          backgroundColor: '#00B8D4', // AppBar (toolbar) use el color primario (azul neón)
         },
       },
     },
@@ -63,9 +64,7 @@ export const theme = createTheme({
             color: '#E0E0E0', // Texto blanco suave
           },
           // Estilo para botones "text" (sin fondo ni borde)
-          '&.MuiButton-text': {
-            color: '#E0E0E0', // Texto blanco suave para botones de texto (ej. filtros de plataforma)
-          },
+      
         },
       },
     },

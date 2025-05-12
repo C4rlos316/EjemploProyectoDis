@@ -23,12 +23,12 @@ const NavigationToolbar = ({ navItems }) => {
               color="inherit"
               href={item.path}
               component="a"
-              sx={{ mx: 1 }}
+              sx={{ mx: 1, color: 'white' }}
             >
               {item.label}
             </Button>
           ))}
-          <Avatar sx={{ ml: 2, bgcolor: 'background.paper' }}>U</Avatar>
+          <Avatar sx={{ ml: 2, bgcolor: 'background.paper' }}>P</Avatar>
         </Box>
       </Toolbar>
     </AppBar>

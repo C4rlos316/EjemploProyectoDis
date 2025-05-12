@@ -1,8 +1,11 @@
 import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 
-const GameCard = ({ game }) => {
+const GameCard = ({ game, onClick }) => {
   return (
-    <Card sx={{ width: 200, height: 250, borderRadius: 2 }}>
+    <Card 
+      sx={{ width: 200, height: 250, borderRadius: 2, cursor: 'pointer' }} 
+      onClick={onClick}
+    >
       <CardMedia
         component="img"
         height="150"
